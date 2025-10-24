@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <div className="assign flex flex-col items-center gap-5 mt-5">
             <input value={inputVal} onChange={(e)=>setInputVal(e.target.value)} type="text" className="border border-white rounded-md p-1 outline-none" />
-            <button onClick={()=> newAss(inputVal)} className="border border-pink-500 py-1 px-2 rounded-md shadow-pink-500 shadow-md">
+            <button onClick={()=> newAss(Number(inputVal))} className="border border-pink-500 py-1 px-2 rounded-md shadow-pink-500 shadow-md">
               assign
             </button>
           </div>
